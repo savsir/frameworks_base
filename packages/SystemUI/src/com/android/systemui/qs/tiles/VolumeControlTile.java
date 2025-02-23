@@ -163,13 +163,12 @@ public class VolumeControlTile extends QSTileImpl<BooleanState>
     @Override
     public BooleanState newTileState() {
         BooleanState state = new BooleanState();
-        state.handlesLongClick = false;
         return state;
     }
 
     @Override
     public Intent getLongClickIntent() {
-        return null;
+        return SOUND_SETTINGS;
     }
 
     @Override
