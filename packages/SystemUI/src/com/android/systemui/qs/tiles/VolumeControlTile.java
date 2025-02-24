@@ -58,6 +58,8 @@ public class VolumeControlTile extends QSTileImpl<BooleanState>
 
     private static final String VOLUME_LEVEL_SETTING = "volume_level";
 
+    private static final Intent SOUND_SETTINGS = new Intent(Settings.Panel.ACTION_VOLUME);
+
     private final AudioManager mAudioManager;
     private float mCurrentVolumePercent;
     private int mCurrentVolumeLevel;
